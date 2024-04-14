@@ -21,10 +21,13 @@ html {
 
 .scene img {
     position: absolute;
+    /* Set position for each image */
 }
 
 .img1 {
+    /* Set initial rotation */
     transform: rotate(0deg);
+    /* Set animation */
     animation: rotateImg 2s ease-in-out infinite alternate;
 }
 
@@ -39,25 +42,28 @@ html {
 }
 
 .img2 {
+    /* Set initial position */
     animation: moveUpDown 1s ease-in-out infinite alternate;
 }
 
 @keyframes moveUpDown {
     0% {
-        top: 5vh;
+        top: 50px;
     }
 
     100% {
-        top: 6vh;
+        top: 55px;
     }
 }
 
 .img3 {
+    /* Set initial rotation */
     transform: rotate(0deg);
-    animation: rotateImg2 1s ease-in-out infinite alternate;
+    /* Set animation */
+    animation: rotateImg 1s ease-in-out infinite alternate;
 }
 
-@keyframes rotateImg2 {
+@keyframes rotateImg {
     0% {
         transform: rotate(-10deg);
     }
@@ -68,98 +74,109 @@ html {
 }
 
 .img5 {
-    right: 30vw;
-    top: 10vh;
+right: 88vh;
+    top: 20vh;
+    /* Set initial position */
     animation: moveLeftRight 1s ease-in-out infinite alternate;
 }
 
 @keyframes moveLeftRight {
     0% {
-        right: 35vw;
+        right:94vh;
     }
 
     100% {
-        right: 40vw;
+        left: ;
     }
 }
 
 .img6 {
+    /* Animation for moving left to right */
     animation: moveLeftToRight 4s linear infinite;
 }
 
 @keyframes moveLeftToRight {
     0% {
-        right: 20vw;
+        right: 20vh;
+        /* Start position */
     }
 
     50% {
-        right: 40vw;
+        right: 40vh;
     }
 
     100% {
-        right: 20vw;
+        right: 20vh;
     }
 }
 
 .rotate {
+    /* Set initial rotation */
     transform: rotate(0deg);
+    /* Set animation */
     animation: rotateImage 10s linear infinite;
 }
 
 @keyframes rotateImage {
     100% {
         transform: rotate(360deg);
+        /* Full rotation */
     }
 }
 
+
 /* Adjust position for each image */
 .scene img:nth-child(1) {
-    right: 20vw;
+    right: 67vh;
+
 }
 
 .scene img:nth-child(2) {
-    left: 15vw;
-    top: 5vh;
+    left: 60vh;
+    top:10vh;
+}
+
+.scene img:nth-child(3) {
+    top:11vh;
 }
 
 .scene img:nth-child(4) {
-    right: 5vw;
-    top: 4vh;
+    right: 11vh;
+    top:8vh;
 }
 
 .scene img:nth-child(5) {
-    right: 30vw;
-    top: 10vh;
+    right:88vh;
+    top:20vh;
 }
 
 .scene img:nth-child(6) {
-    right: 15vw;
-    top: 6vh;
+    right: 45vh;
+    top:13vh;
 }
 
 .scene img:nth-child(7) {
-    bottom: 15vh;
-    right: 10vw;
+ bottom: 29vh;
+ right: 20vh;
 }
 
 .scene img:nth-child(8) {
-    bottom: 13vh;
-    left: 20vw;
+    bottom: 27vh;
+    left:30vh;
 }
 
 .scene img:nth-child(9) {
-    left: 25vw;
-    bottom: 1vh;
+ left: 47vh; 
+ bottom:1vh; 
 }
 
 .img10 {
     bottom: 4vh;
-    left: -15vw;
+    left: -60vh;
 }
 
 .img11 {
-    bottom: 3vh;
-    left: 5vw;
+   bottom:3vh;
+   left: 10vh;
 }
-
 /* Add positions for more images as needed */
