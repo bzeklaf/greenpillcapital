@@ -1,0 +1,183 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.hero {
+    background-image: url('assets/bletka-grafika.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scene {
+    position: relative;
+}
+
+.scene img {
+    position: absolute;
+    /* Set position for each image */
+}
+
+.img1 {
+    /* Set initial rotation */
+    transform: rotate(0deg);
+    /* Set animation */
+    animation: rotateImg 2s ease-in-out infinite alternate;
+}
+
+@keyframes rotateImg {
+    0% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(5deg);
+    }
+}
+
+.img2 {
+    /* Set initial position */
+    animation: moveUpDown 1s ease-in-out infinite alternate;
+}
+
+@keyframes moveUpDown {
+    0% {
+        top: 50px;
+    }
+
+    100% {
+        top: 55px;
+    }
+}
+
+.img3 {
+    /* Set initial rotation */
+    transform: rotate(0deg);
+    /* Set animation */
+    animation: rotateImg 1s ease-in-out infinite alternate;
+}
+
+@keyframes rotateImg {
+    0% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+.img5 {
+right: 88vh;
+    top: 20vh;
+    /* Set initial position */
+    animation: moveLeftRight 1s ease-in-out infinite alternate;
+}
+
+@keyframes moveLeftRight {
+    0% {
+        right:94vh;
+    }
+
+    100% {
+        left: ;
+    }
+}
+
+.img6 {
+    /* Animation for moving left to right */
+    animation: moveLeftToRight 4s linear infinite;
+}
+
+@keyframes moveLeftToRight {
+    0% {
+        right: 20vh;
+        /* Start position */
+    }
+
+    50% {
+        right: 40vh;
+    }
+
+    100% {
+        right: 20vh;
+    }
+}
+
+.rotate {
+    /* Set initial rotation */
+    transform: rotate(0deg);
+    /* Set animation */
+    animation: rotateImage 10s linear infinite;
+}
+
+@keyframes rotateImage {
+    100% {
+        transform: rotate(360deg);
+        /* Full rotation */
+    }
+}
+
+
+
+/* Adjust position for each image */
+.scene img:nth-child(1) {
+    right: 67vh;
+
+}
+
+.scene img:nth-child(2) {
+    left: 60vh;
+    top:10vh;
+}
+
+.scene img:nth-child(3) {
+    top:11vh;
+}
+
+.scene img:nth-child(4) {
+    right: 11vh;
+    top:8vh;
+}
+
+.scene img:nth-child(5) {
+    right:88vh;
+    top:20vh;
+}
+
+.scene img:nth-child(6) {
+    right: 45vh;
+    top:13vh;
+}
+
+.scene img:nth-child(7) {
+ bottom: 29vh;
+ right: 20vh;
+}
+
+.scene img:nth-child(8) {
+    bottom: 27vh;
+    left:30vh;
+}
+
+.scene img:nth-child(9) {
+ left: 47vh; 
+ bottom:1vh; 
+}
+
+.img10 {
+    bottom: 4vh;
+    left: -60vh;
+}
+
+.img11 {
+   bottom:3vh;
+   left: 10vh;
+}
+/* Add positions for more images as needed */
