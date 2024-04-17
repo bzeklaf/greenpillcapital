@@ -3,6 +3,8 @@ html {
     margin: 0;
     padding: 0;
     height: 100%;
+    overflow-x: hidden;
+    
 }
 
 .hero {
@@ -194,21 +196,25 @@ right: 88vh;
     
     .scene img:nth-child(3) {
         top: 11vh;
+        display: none;
     }
     
     .scene img:nth-child(4) {
         right: 11vh;
         top: 8vh;
+        display: none;
     }
     
     .scene img:nth-child(5) {
         right: 70vh;
         top: 20vh;
+        display: none;
     }
     
     .scene img:nth-child(6) {
         right: 35vh;
         top: 13vh;
+        display: none;
     }
     
     .scene img:nth-child(7) {
@@ -230,6 +236,26 @@ right: 88vh;
         border-radius: 12px;
         background-color: rgba(0,    0  , 0, .7);
 
+       }
+
+       /* check if horizontal */
+
+       @media screen and (max-width: 768px) and (orientation: landscape){
+        
+        
+        .scene img:nth-child(9) {
+            width: 100px;
+            height: auto;
+            left:50%;
+            transform: translateX(-50%);
+            /* transform: scale(.5); */
+            bottom: 0;
+            top: -120px;
+            padding: 20px;
+            border-radius: 12px;
+            background-color: rgba(0,    0  , 0, .7);
+    
+           }
        }
 
        
@@ -258,9 +284,7 @@ right: 88vh;
         transform: translateX(50%);
     }
 
-    html{
-        overflow-x: hidden;
-    }
+ 
 
 
     
