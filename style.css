@@ -86,7 +86,7 @@ right: 88vh;
     }
 
     100% {
-        left: ;
+        left: 100vh;
     }
 }
 
@@ -180,3 +180,88 @@ right: 88vh;
    left: 10vh;
 }
 /* Add positions for more images as needed */
+
+/* mobile positions */
+@media screen and (max-width: 768px) {
+    .scene img:nth-child(1) {
+        right: 50vh;
+    }
+    
+    .scene img:nth-child(2) {
+        left: 40vh;
+        top: 10vh;
+    }
+    
+    .scene img:nth-child(3) {
+        top: 11vh;
+    }
+    
+    .scene img:nth-child(4) {
+        right: 11vh;
+        top: 8vh;
+    }
+    
+    .scene img:nth-child(5) {
+        right: 70vh;
+        top: 20vh;
+    }
+    
+    .scene img:nth-child(6) {
+        right: 35vh;
+        top: 13vh;
+    }
+    
+    .scene img:nth-child(7) {
+        bottom: 29vh;
+        right: 20vh;
+    }
+    
+    .scene img:nth-child(8) {
+        bottom: 27vh;
+        left: 30vh;
+    }
+
+    .scene img:nth-child(9) {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        top: -300px;
+        padding: 20px;
+        border-radius: 12px;
+        background-color: rgba(0,    0  , 0, .7);
+
+       }
+
+       
+@keyframes moveLeftRightMobile {
+    0% {
+        right:1vh;
+    }
+
+    100% {
+        left: 5vh;
+    }
+}
+    
+    .img10 {
+        bottom: 3vh;
+        left: 50%;
+        transform: translateX(-150%);
+        animation: moveLeftRightMobile 5s linear infinite;
+
+
+    }
+    
+    .img11 {
+        bottom: 3vh;
+        left: 50%;
+        transform: translateX(50%);
+    }
+
+    html{
+        overflow-x: hidden;
+    }
+
+
+    
+}
