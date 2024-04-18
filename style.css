@@ -240,7 +240,7 @@ right: 88vh;
 
        /* check if horizontal */
 
-       @media (pointer:none) and (orientation: landscape){
+      @media (max-width:768px) and (orientation: landscape){
         
         
         .scene img:nth-child(9) {
