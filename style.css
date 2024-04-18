@@ -1,291 +1,305 @@
 body,
 html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow-x: hidden;
-    
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 .hero {
-    background-image: url('assets/bletka-grafika.png');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-image: url("assets/bletka-grafika.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .scene {
-    position: relative;
+  position: relative;
 }
 
 .scene img {
-    position: absolute;
-    /* Set position for each image */
+  position: absolute;
+  /* Set position for each image */
 }
 
 .img1 {
-    /* Set initial rotation */
-    transform: rotate(0deg);
-    /* Set animation */
-    animation: rotateImg 2s ease-in-out infinite alternate;
+  /* Set initial rotation */
+  transform: rotate(0deg);
+  /* Set animation */
+  animation: rotateImg 2s ease-in-out infinite alternate;
 }
 
 @keyframes rotateImg {
-    0% {
-        transform: rotate(-5deg);
-    }
+  0% {
+    transform: rotate(-5deg);
+  }
 
-    100% {
-        transform: rotate(5deg);
-    }
+  100% {
+    transform: rotate(5deg);
+  }
 }
 
 .img2 {
-    /* Set initial position */
-    animation: moveUpDown 1s ease-in-out infinite alternate;
+  /* Set initial position */
+  animation: moveUpDown 1s ease-in-out infinite alternate;
 }
 
 @keyframes moveUpDown {
-    0% {
-        top: 50px;
-    }
+  0% {
+    top: 50px;
+  }
 
-    100% {
-        top: 55px;
-    }
+  100% {
+    top: 55px;
+  }
 }
 
 .img3 {
-    /* Set initial rotation */
-    transform: rotate(0deg);
-    /* Set animation */
-    animation: rotateImg 1s ease-in-out infinite alternate;
+  /* Set initial rotation */
+  transform: rotate(0deg);
+  /* Set animation */
+  animation: rotateImg 1s ease-in-out infinite alternate;
 }
 
 @keyframes rotateImg {
-    0% {
-        transform: rotate(-10deg);
-    }
+  0% {
+    transform: rotate(-10deg);
+  }
 
-    100% {
-        transform: rotate(10deg);
-    }
+  100% {
+    transform: rotate(10deg);
+  }
 }
 
 .img5 {
-right: 88vh;
-    top: 20vh;
-    /* Set initial position */
-    animation: moveLeftRight 1s ease-in-out infinite alternate;
+  right: 88vh;
+  top: 20vh;
+  /* Set initial position */
+  animation: moveLeftRight 1s ease-in-out infinite alternate;
 }
 
 @keyframes moveLeftRight {
-    0% {
-        right:94vh;
-    }
+  0% {
+    right: 94vh;
+  }
 
-    100% {
-        left: 100vh;
-    }
+  100% {
+    left: 100vh;
+  }
 }
 
 .img6 {
-    /* Animation for moving left to right */
-    animation: moveLeftToRight 4s linear infinite;
+  /* Animation for moving left to right */
+  animation: moveLeftToRight 4s linear infinite;
 }
 
 @keyframes moveLeftToRight {
-    0% {
-        right: 20vh;
-        /* Start position */
-    }
+  0% {
+    right: 20vh;
+    /* Start position */
+  }
 
-    50% {
-        right: 40vh;
-    }
+  50% {
+    right: 40vh;
+  }
 
-    100% {
-        right: 20vh;
-    }
+  100% {
+    right: 20vh;
+  }
 }
 
 .rotate {
-    /* Set initial rotation */
-    transform: rotate(0deg);
-    /* Set animation */
-    animation: rotateImage 10s linear infinite;
+  /* Set initial rotation */
+  transform: rotate(0deg);
+  /* Set animation */
+  animation: rotateImage 10s linear infinite;
 }
 
 @keyframes rotateImage {
-    100% {
-        transform: rotate(360deg);
-        /* Full rotation */
-    }
+  100% {
+    transform: rotate(360deg);
+    /* Full rotation */
+  }
 }
-
 
 /* Adjust position for each image */
 .scene img:nth-child(1) {
-    right: 67vh;
-
+  right: 67vh;
 }
 
 .scene img:nth-child(2) {
-    left: 60vh;
-    top:10vh;
+  left: 60vh;
+  top: 10vh;
 }
 
 .scene img:nth-child(3) {
-    top:11vh;
+  top: 11vh;
 }
 
 .scene img:nth-child(4) {
-    right: 11vh;
-    top:8vh;
+  right: 11vh;
+  top: 8vh;
 }
 
 .scene img:nth-child(5) {
-    right:88vh;
-    top:20vh;
+  right: 88vh;
+  top: 20vh;
 }
 
 .scene img:nth-child(6) {
-    right: 45vh;
-    top:13vh;
+  right: 45vh;
+  top: 13vh;
 }
 
 .scene img:nth-child(7) {
- bottom: 29vh;
- right: 20vh;
+  bottom: 29vh;
+  right: 20vh;
 }
 
 .scene img:nth-child(8) {
-    bottom: 27vh;
-    left:30vh;
+  bottom: 27vh;
+  left: 30vh;
 }
 
 .scene img:nth-child(9) {
- left: 47vh; 
- bottom:1vh; 
+  left: 47vh;
+  bottom: 1vh;
 }
 
 .img10 {
-    bottom: 4vh;
-    left: -60vh;
+  bottom: 4vh;
+  left: -60vh;
 }
 
 .img11 {
-   bottom:3vh;
-   left: 10vh;
+  bottom: 3vh;
+  left: 10vh;
 }
 /* Add positions for more images as needed */
 
-/* mobile positions */
-@media screen and (max-width: 768px) {
-    .scene img:nth-child(1) {
-        right: 50vh;
-    }
-    
-    .scene img:nth-child(2) {
-        left: 40vh;
-        top: 10vh;
-    }
-    
-    .scene img:nth-child(3) {
-        top: 11vh;
-        display: none;
-    }
-    
-    .scene img:nth-child(4) {
-        right: 11vh;
-        top: 8vh;
-        display: none;
-    }
-    
-    .scene img:nth-child(5) {
-        right: 70vh;
-        top: 20vh;
-        display: none;
-    }
-    
-    .scene img:nth-child(6) {
-        right: 35vh;
-        top: 13vh;
-        display: none;
-    }
-    
-    .scene img:nth-child(7) {
-        bottom: 29vh;
-        right: 20vh;
-    }
-    
-    .scene img:nth-child(8) {
-        bottom: 27vh;
-        left: 30vh;
-    }
-
-    .scene img:nth-child(9) {
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 0;
-        top: -300px;
-        padding: 20px;
-        border-radius: 12px;
-        background-color: rgba(0,    0  , 0, .7);
-
-       }
-
-       /* check if horizontal */
-
-       @media screen and (max-width: 768px) and (orientation: landscape){
-        
-        
-        .scene img:nth-child(9) {
-            width: 100px;
-            height: auto;
-            left:50%;
-            transform: translateX(-50%);
-            /* transform: scale(.5); */
-            bottom: 0;
-            top: -120px;
-            padding: 20px;
-            border-radius: 12px;
-            background-color: rgba(0,    0  , 0, .7);
-    
-           }
-       }
-
-       
 @keyframes moveLeftRightMobile {
-    0% {
-        right:1vh;
-    }
+  0% {
+    right: 1vh;
+  }
 
-    100% {
-        left: 5vh;
-    }
+  100% {
+    left: 5vh;
+  }
 }
-    
-    .img10 {
-        bottom: 3vh;
-        left: 50%;
-        transform: translateX(-150%);
-        animation: moveLeftRightMobile 5s linear infinite;
+
+/* mobile positions */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .scene > img:nth-child(1) {
+    right: 50vh;
+  }
+
+  .scene img:nth-child(2) {
+    left: 40vh;
+    top: 10vh;
+  }
+
+  .scene img:nth-child(3) {
+    top: 11vh;
+    display: none;
+  }
+
+  .scene img:nth-child(4) {
+    right: 11vh;
+    top: 8vh;
+    display: none;
+  }
+
+  .scene img:nth-child(5) {
+    right: 70vh;
+    top: 20vh;
+    display: none;
+  }
+
+  .scene img:nth-child(6) {
+    right: 35vh;
+    top: 13vh;
+    display: none;
+  }
+
+  .scene img:nth-child(7) {
+    bottom: 29vh;
+    right: 20vh;
+  }
+
+  .scene img:nth-child(8) {
+    bottom: 27vh;
+    left: 30vh;
+  }
+
+  .scene img:nth-child(9) {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    top: -300px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  /* check if horizontal */
+
+  .img10 {
+    bottom: 3vh;
+    left: 50%;
+    transform: translateX(-150%);
+    animation: moveLeftRightMobile 5s linear infinite;
+  }
+
+  .img11 {
+    bottom: 3vh;
+    left: 50%;
+    transform: translateX(50%);
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .scene > img:nth-child(1),
+  .scene img:nth-child(2),
+  .scene img:nth-child(3),
+  .scene img:nth-child(4),
+  .scene img:nth-child(5),
+  .scene img:nth-child(6) {
+    display: none;
+  }
+
+  .scene>img:nth-child(9){
+    width: 200px;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    /* transform: scale(.5); */
+    bottom: 0;
+    top: -120px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
 
 
-    }
-    
-    .img11 {
-        bottom: 3vh;
-        left: 50%;
-        transform: translateX(50%);
-    }
+  div > a:nth-child(10) > img {
+    width: 80px;
+    height: auto;
+    left: 120px;
+    bottom: 0;
+    top: -120px;
+  }
+
+  div > a:nth-child(11) > img {
+    width: 80px;
+    height: auto;
+    left: -200px;
+
+    bottom: 0;
+    top: -120px;
+  }
 
  
-
-
-    
 }
